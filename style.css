@@ -1,0 +1,22 @@
+.root{
+    --blue:#00fbff;
+    --grey:#909293;
+    --lightgrey:#d5dadc;
+    --maxwidth:1200px;
+    --rootsize: 20px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: var(--rootsize);
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+div.container{
+    width: 100%;
+    max-width: var(--maxwidth);
+}
