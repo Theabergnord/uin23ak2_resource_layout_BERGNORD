@@ -1,15 +1,15 @@
-.root{
-    --blue:#00fbff;
-    --grey:#909293;
-    --lightgrey:#d5dadc;
-    --maxwidth:1200px;
-    --rootsize: 20px;
+:root{
+    --blue:#26d8db;
+    --grey:#808080;
+    --lightgrey:hsl(0, 0%, 96%);
+    --white:#fff;
+    --maxwidth:900px;
+    --rootsize:18px;
 }
 
 body{
     font-family: Arial, sans-serif;
-    font-size: var(--rootsize);
-    margin-top: 0;
+    margin-top: 3rem;
     padding-top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -19,4 +19,94 @@ body{
 div.container{
     width: 100%;
     max-width: var(--maxwidth);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border: 1px solid var(--grey);
+    text-transform: uppercase;
+    color: var(--grey);
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    margin-top: 3rem;
+}
+nav a{
+    color: var(--grey);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: var(--rootsize);
+    border-top: 1px solid var(--grey);
+    border-left: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
+    margin-right: 10px;
+    background-color: var(--lightgrey);
+}
+nav a.active{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    justify-content: space-between;
+    border-left: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+    border-top: 6px solid var(--blue);
+}
+
+article h2{
+    color: var(--grey);
+    text-transform: uppercase;
+}
+article p{
+    max-width: 600px;
+}
+.list{
+    color: var(--grey);
+    margin: 1rem;
+    padding-left: 0;
+    padding-bottom: 100px;
+}
+/*Href="https://stackoverflow.com/questions/10972096/unordered-list-not-aligning-all-the-way-to-the-left-in-a-div"*/
+.list li{
+    margin-bottom: 5px;
+}
+article a{
+    color: var(--blue);
+    
+}
+
+
+@media (max-width: 765px) {
+    main{
+        margin-top: 10px;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    nav a{
+        border-bottom: 1px solid var(--grey);
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
